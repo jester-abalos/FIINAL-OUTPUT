@@ -1,0 +1,185 @@
+/* Global reset and box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+/* Container for overall layout */
+.container {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    max-height: fit-content;
+}
+
+/* Menu styling (left panel) */
+.menu {
+    width: 300px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* User account details at the top of the menu */
+.useraccount {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px #D9D9D9 solid;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+#profilepic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profilename {
+    width: 65%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Styling for menu buttons */
+.menu button {
+    width: 170px;
+    font-weight: 750;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color: transparent;
+}
+
+#logout {
+    margin-left: 0;
+    justify-content: center;
+}
+
+.menu button img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.menu span {
+    width: 165px;
+    height: 3px;
+    background-color: #D9D9D9;
+    margin: 3px 5px;
+    border: none;
+}
+
+/* Active button styling */
+#myorders {
+    background-color: #ffffff;
+}
+
+#myorders:hover {
+    background-color: #737577;
+}
+
+/* Order container (main content) */
+.ordercontainer {
+    width: 90%;
+    max-height: fit-content;
+    margin: 0 3%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Field names (column headers) styling */
+.fieldnamebox {
+    background-color: #e2e2e2;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 3.5% 0 2%;
+}
+
+.fieldnames {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1% 0;
+}
+
+.fieldnames p {
+    font-size: 1.3vw;
+    width: 15%;
+}
+
+.fieldnames span {
+    width: 3%;
+}
+
+/* Order list styling */
+.productlist {
+    max-height: 75vh;
+    overflow-y: auto;
+    padding: 30px 2%;
+}
+
+/* Each product box styling */
+.Order-Info {
+    background-color: #e2e2e2;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Product details section */
+.productdetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.productdetails img {
+    width: 10%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.productdetails p {
+    width: 20%;
+    font-size: 1.2vw;
+}
+
+#statusvalue {
+    font-weight: 800;
+}
+
+/* Styling for action button */
+.productdetails button {
+    background-color: #83837E;
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Button hover effect */
+.productdetails button:hover {
+    background-color: #5f5f52;
+}

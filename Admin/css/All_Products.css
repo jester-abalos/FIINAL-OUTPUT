@@ -1,0 +1,299 @@
+@font-face {
+    font-family: VastShadow-regular;
+    src: url(../font/VastShadow-Regular.ttf);
+}
+@font-face {
+    font-family: inter-regular;
+    src: url(../font/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: Rubik-medium;
+    src: url(../font/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: Rubik-semibold;
+    src: url(../font/Rubik-SemiBold.ttf);
+}
+@font-face {
+    font-family: Open-sans-semibold;
+    src: url(../font/OpenSans-SemiBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+
+}
+body{
+    width: 100%;
+    height: 110vh;
+    background-color: #F2F2F2;
+    display: flex;
+    overflow-y: scroll;
+}
+.nav-side{
+    width: 250px;
+    height: 110vh;
+    background-color: #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-right: #0000004f solid 1px;
+}
+
+.nav-side img{
+    width: 180px;
+    height: 80px;
+}
+.nav-side ul{
+    list-style: none;
+    margin: 20px 0;
+    
+}
+.nav-side ul li{
+    margin: 20px 0;
+    padding: 10px 30px;
+}
+.nav-side ul li a{
+    text-decoration: none;
+    font-family: Rubik-medium;
+    font-size: 15px;
+    
+}
+.active{
+    border-radius: 10px;
+    background-color: #2A2A2A;
+}
+.active a{
+    color: #FFFFFF;
+}
+.Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.nav-top{
+    width: 100%;
+    height: 50px;
+    background-color: #2A2A2A;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    position: sticky;
+}
+.nav-top .search-notification img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+.nav-top .Admin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    flex-direction: row;
+    border: #ffffff solid 1px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.nav-top .Admin h6{
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.nav-top .Admin h6 img{
+    width: 15px;
+    height: 15px;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    overflow-y: scroll;
+    
+}
+
+.Header-Container{
+    width: 99%;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.Header-Container h1{
+    font-family: Rubik-semibold;
+    font-size: 30px;
+    color: #000000;
+    
+}
+.Header-Container .directory{
+    display: flex;
+    justify-content: space-between;
+}
+.Header-Container .directory  .Add_New_Product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Header-Container .directory  .Add_New_Product button{
+    padding: 7px 20px;
+    border: none;
+    background-color: #B1B1AD;
+    color: #000000;
+    border-radius: 10px;
+    font-family: Rubik-medium;
+    font-size: 15px;
+}
+
+.Header-Container .directory  .Add_New_Product button img{
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+}
+.Main-Container{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.main-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 10px;
+}
+.main-content .card{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: #000000 solid 1px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.main-content .card .row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-content .card .row1 .img{
+    width: 140px;
+    height: 120px;
+}
+.main-content .card .row1 .img img{
+    width: 100%;
+    height: 100%;
+}
+.main-content .card .row1 .Contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-content .card .row1 .Contents .ProdName-Description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-content .card .row1 .Contents .ProdName-Description h3{
+    font-family: Open-sans-semibold;
+    font-size: 20px;
+    color: #000000;
+    margin: 0;
+}
+.main-content .card .row1 .Contents .ProdName-Description p{
+    font-family: Open-sans-semibold;
+    font-size: 15px;
+    color: #000000;
+    margin: 0;
+}
+.main-content .card .row1 .Contents .price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-content .card .row1 .Contents .price h3{
+    font-family: Open-sans-semibold;
+    font-size: 20px;
+    color: #000000;
+    
+    margin-bottom: 10px;
+}
+.main-content .card .row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+.main-content .card .row2 .Summary{
+    display: flex;
+    width: 70%;
+}
+.main-content .card .row2 .Summary p{
+    font-family: Open-sans-semibold;
+    font-size: 20px;
+    color: #000000;
+    margin: 0;
+}
+.main-content .card .row2 .Discription{
+    display: flex;
+    width: 70%;
+}
+.main-content .card .row2 .Discription p{
+    font-family: Open-sans-semibold;
+    font-size: 15px;
+    color: #00000068;
+    margin: 0;
+}
+.main-content .card .row3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: #00000093 solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.main-content .card .row3 span{
+    background-color: #00000093;
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+}
+.main-content .card .row3 .sales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-content .card .row3 .sales p{
+    font-family: Open-sans-semibold;
+    font-size: 15px;
+    color: #00000093;
+    margin: 0;
+}
+.main-content .card .row3 .Remaining-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-content .card .row3 .Remaining-product p{
+    font-family: Open-sans-semibold;
+    font-size: 15px;
+    color: #00000093;    
+    margin: 0;
+}

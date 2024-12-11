@@ -1,0 +1,146 @@
+@font-face {
+    font-family: VastShadow-regular;
+    src: url(../font/VastShadow-Regular.ttf);
+}
+@font-face {
+    font-family: inter-regular;
+    src: url(../font/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: Rubik-medium;
+    src: url(../font/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: Rubik-semibold;
+    src: url(../font/Rubik-SemiBold.ttf);
+}
+@font-face {
+    font-family: Open-sans-semibold;
+    src: url(../font/OpenSans-SemiBold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+}
+body {
+    height: 110vh;
+    background-color: #F2F2F2;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.content {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px 0;
+    width: 100%;
+}
+.content .Column1,
+.content .Column2 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 10px 30px;
+}
+.content .Column1 h2,
+.content .Column2 h2 {
+    font-family: Rubik-medium;
+    font-size: 30px;
+    color: #363636;
+    margin: 20px 0;
+}
+.content .Column1 input,
+.content .Column2 input {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid #3d3d3d;
+    margin: 20px 0;
+}
+.content .Column1 .SKU-Stock,
+.content .Column1 .Reg_Price-Sales_Price,
+.content .Column2 .Product-Upload,
+.content .Column2 .Buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.content .Column1 .SKU-Stock .SKU,
+.content .Column1 .SKU-Stock .Stock,
+.content .Column1 .Reg_Price-Sales_Price .Reg-Price,
+.content .Column1 .Reg_Price-Sales_Price .Sales-Price {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.content .Column2 .Img {
+    width: 100%;
+    height: 500px;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 15px solid #FAFAFA;
+    border-radius: 25px;
+}
+.content .Column2 .Product-Upload {
+    height: 150px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #FAFAFA;
+    cursor: pointer;
+}
+.content .Column2 .Product-Upload span {
+    height: 80px;
+    width: 80px;
+}
+.content .Column2 .Product-Upload .File-Name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+.content .Column2 .Product-Upload .File-Name p {
+    font-family: inter-regular;
+    font-size: 20px;
+    color: #000000;
+    margin: 20px 0;
+}
+.content .Column2 .Product-Upload .File-Name div {
+    width: 100%;
+    height: 5px;
+    background-color: #003F62;
+    border-radius: 10px;
+}
+.content .Column2 .Buttons button {
+    width: 45%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid #3d3d3d;
+    cursor: pointer;
+    font-family: inter-regular;
+    font-size: 25px;
+    color: #000000;
+}
+

@@ -1,0 +1,302 @@
+@font-face {
+    font-family: VastShadow-regular;
+    src: url(../font/VastShadow-Regular.ttf);
+}
+@font-face {
+    font-family: inter-regular;
+    src: url(../font/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: Rubik-medium;
+    src: url(../font/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: Rubik-semibold;
+    src: url(../font/Rubik-SemiBold.ttf);
+}
+@font-face {
+    font-family: Open-sans-semibold;
+    src: url(../font/OpenSans-SemiBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+
+}
+body{
+    width: 100%;
+    height: 110vh;
+    background-color: #F2F2F2;
+    display: flex;
+    overflow-y: scroll;
+}
+.nav-side{
+    width: 250px;
+    height: 110vh;
+    background-color: #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: #0000004f solid 1px;
+}
+
+.nav-side img{
+    width: 180px;
+    height: 80px;
+}
+.nav-side ul{
+    list-style: none;
+    margin: 20px 0;
+    
+}
+.nav-side ul li{
+    margin: 20px 0;
+    padding: 10px 30px;
+}
+.nav-side ul li a{
+    text-decoration: none;
+    font-family: Rubik-medium;
+    font-size: 15px;
+    
+}
+.active{
+    border-radius: 10px;
+    background-color: #2A2A2A;
+}
+.active a{
+    color: #FFFFFF;
+}
+.Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.nav-top{
+    width: 100%;
+    height: 50px;
+    background-color: #2A2A2A;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    position: sticky;
+}
+.nav-top .search-notification img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+.nav-top .Admin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    flex-direction: row;
+    border: #ffffff solid 1px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.nav-top .Admin h6{
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.nav-top .Admin h6 img{
+    width: 15px;
+    height: 15px;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    overflow-y: scroll;
+    
+}
+
+.Header-Container{
+    width: 99%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.Header-Container h1{
+    font-family: Rubik-semibold;
+    font-size: 30px;
+    color: #000000;
+    
+}
+.Header-Container .directory p{
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #000000;
+    margin: 10px 0;
+}
+.Order-Id{
+    width: 99%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 10px;
+    margin:  0 20px;
+}
+.Order-Id p{
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #000000;
+    margin: 10px 0;
+}
+.Order-Id .Status{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 0;
+    background-color: #FFA52F;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.Order-Id .Status p{
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #000000;
+    margin: 5px 0;
+    padding: 5px 15px;
+}
+.Calendar-Buttons{
+    width: 99%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin:  0 20px;
+}
+.Calendar-Buttons .Calendar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 0;
+}
+.Calendar-Buttons .Calendar img{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+.Calendar-Buttons .Calendar p{
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #000000;
+    margin: 10px 0;
+}
+.Calendar-Buttons .Buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin: 0 10px;
+}
+.Calendar-Buttons .Buttons button{
+    display: flex;
+    background-color: #b8b8b8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    height: 100%;
+}
+.Calendar-Buttons .Buttons .Change-Status img{
+    margin-left: 40px;
+}
+.Cust-Info-Del{
+    width: 99%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0 20px;
+}
+.Cust-Info-Del .Customer-card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: #000000 solid 1px;
+}
+.Cust-Info-Del .Customer-card .Customer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 0;
+}
+.Cust-Info-Del .Customer-card .Customer img{
+    width: 50px;
+    height: 50px;
+    
+    margin-bottom: 20px;
+    background-color: #b8b8b8;
+    border-radius: 10px;
+    padding: 5px;
+}
+.Cust-Info-Del .Customer-card .Customer .Customer-Info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin: 0 10px;
+}
+.Cust-Info-Del .Customer-card .Customer .Customer-Info h3{
+    font-family: Rubik-semibold;
+    font-size: 20px;
+    color: #000000;
+    margin: 10px 0;
+}
+.Cust-Info-Del .Customer-card .Customer .Customer-Info p{
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #8e8e8e;
+    margin: 0;
+}
+.Cust-Info-Del .Customer-card .ViewBtn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.Cust-Info-Del .Customer-card .ViewBtn button{
+    display: flex;
+    background-color: #b8b8b8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: 100%;
+    border: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Open-sans-semibold;
+
+}
+
+
+

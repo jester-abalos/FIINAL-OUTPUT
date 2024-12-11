@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-color: #F0F1F3;
+}
+
+/* Top Navigation */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.search-notification img {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.Admin {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Admin img {
+    margin-left: 5px;
+}
+
+/* Sidebar */
+.nav-side {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1e9d8;
+    width: 200px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px;
+    padding-top: 40px;
+}
+
+.nav-side img {
+    width: 150px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.nav-side ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-side li {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.nav-side li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-side li.active a {
+    background-color: #ffd780;
+}
+
+/* Content Area */
+.content {
+    margin-left: 220px;
+    padding: 30px;
+}
+
+/* Header Container */
+.Header-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Header-Container h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.directory p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Column1, .Column2 {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.Column1 h4, .Column2 h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.Column1 input, .Column2 input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Column1 input[type="text"], .Column2 input[type="file"] {
+    height: 40px;
+}
+
+.Column1 input[type="number"], .Column1 input[type="text"]:nth-child(6) {
+    width: 100%;
+}
+
+.SKU-Stock, .Reg_Price-Sales_Price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SKU-Stock .Stock, .Reg_Price-Sales_Price .Reg-Price {
+    width: 48%;
+}
+
+input[type="file"] {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.Buttons button {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffd780;
+    border: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.Buttons button:hover {
+    background-color: #ff6c67;
+}
+
+.Buttons button:last-child {
+    background-color: #606060;
+}
+
+.Buttons button:last-child:hover {
+    background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+    }
+
+    .nav-side {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .Header-Container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Column1, .Column2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Column1 input, .Column2 input {
+        width: 100%;
+    }
+}

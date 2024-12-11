@@ -1,0 +1,125 @@
+@font-face {
+    font-family: VastShadow-regular;
+    src: url(../font/VastShadow-Regular.ttf);
+}
+@font-face {
+    font-family: inter-regular;
+    src: url(../font/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: Rubik-medium;
+    src: url(../font/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: Rubik-semibold;
+    src: url(../font/Rubik-SemiBold.ttf);
+}
+@font-face {
+    font-family: Open-sans-semibold;
+    src: url(../font/OpenSans-SemiBold.ttf);
+}
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.nav-side {
+    width: 250px;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 9;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-side img {
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.nav-side ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-side ul li {
+    margin: 15px 0;
+    padding: 10px 30px;
+}
+
+.nav-side ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 4px;
+    
+        text-decoration: none;
+        font-family: Rubik-medium;
+        font-size: 15px;
+ 
+    transition: background-color 0.3s ease;
+}
+
+.nav-side ul li a:hover,
+.nav-side ul li.active a {
+    background-color: #94989c;
+}
+
+/* Sidebar Open */
+.nav-side.open {
+    left: 0;
+}
+
+
+/* Main Content */
+.content {
+    margin-top: 60px; /* Push below nav-top */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-side {
+        width: 200px;
+    }
+
+    .menu-toggle img {
+        width: 20px;
+    }
+}
+
+/* Top Navigation */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-toggle img {
+    width: 24px;
+    cursor: pointer;
+}

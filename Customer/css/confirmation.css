@@ -1,0 +1,151 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Container for the entire confirmation page */
+.confirmation-container {
+    max-width: 800px;
+    margin: 50px auto;
+    height: auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    height: 20px;
+}
+
+/* Title styling */
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Paragraph styling */
+p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Barcode styling */
+.barcode {
+    max-width: 150px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Order summary styling */
+.order-summary {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.order-summary h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.order-summary h3 {
+    font-size: 1.3em;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* List items within the order */
+.item-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.item-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.item-list li:nth-child(even) {
+    background: #f1f1f1;
+}
+
+/* Total cost section styling */
+.total-cost {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    border-top: 2px solid #eee;
+    padding-top: 15px;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Primary button (Back to Home) */
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Secondary button (View Order History) */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Ensure buttons align properly */
+.actions {
+    margin-top: 30px;
+}
+
+/* Small screen responsiveness */
+@media (max-width: 768px) {
+    .confirmation-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .order-summary h2 {
+        font-size: 1.6em;
+    }
+
+    .order-summary h3 {
+        font-size: 1.2em;
+    }
+
+    .item-list li {
+        font-size: 0.9em;
+    }
+}

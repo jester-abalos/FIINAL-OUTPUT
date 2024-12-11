@@ -1,0 +1,303 @@
+@font-face {
+   
+    src: url(../fonts/VastShadow-Regular.ttf);
+    font-family: VastShadow;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: url('../../assets/img/Login_BG.png');
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+
+.google{
+    display: flex;
+}
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+   background-color: rgba(255, 255, 255, 0.16);
+    height: 7.1%;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: #fff 2px solid;
+   
+}
+
+
+
+
+.LOGIN h1{
+    color: #fff;
+    font-family: VastShadow;
+    font-size: 100%;
+}
+.Login-bg{
+   
+    height: 100vh;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   
+}
+.Login_Container{
+    background: #fff;
+    border-radius: 60px;
+    width: 90%;
+    max-width: 420px;
+    padding: 25px;
+    margin-right: 2.5vw;
+    margin-top: 40px;
+    
+
+    
+}
+.login-form{
+    background-color: #636361;
+    width: 100%;
+    
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding: 2vh 30px;
+}
+.profile-login{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.form-group{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.form-group input{
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.For-pass{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: right;
+}
+.For-pass p{
+    color: rgb(255, 255, 255);
+    font-family: Vast Shadow;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.For-pass p:hover{
+    color: rgb(255, 255, 255);
+    font-family: Vast Shadow;
+    font-weight: bold;
+    
+}
+
+button{
+    width: 50%;
+    align-items: center;
+    aspect-ratio: 12/3;
+    border: 1px solid rgba(185,185,185);
+    border-radius: 15px;
+    background-color: rgba(185,185,185);
+    cursor: pointer;
+}
+button p{
+    color: #000;
+    font-size: 20px;
+    font-family: Vast Shadow;
+    font-weight: bold;
+}
+button:hover{
+    width: 50%;
+    aspect-ratio: 12/3;
+    border: 1px solid rgba(84, 84, 84, 0.8);
+      border-radius: 15px;
+    background-color: rgba(240, 238, 238, 0.781);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.or-span{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.or-span span{
+    flex: 1;
+    height: 1.5px;
+    width: 130px;
+    background-color: #000; 
+}
+.or-span p{
+    margin: 0 10px;
+    color: #fff;
+}
+
+.connect-with{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.connect-with img{
+    margin: 0 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  
+  
+}
+.sign-up{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.sign-up p{
+    font-size: 18px;
+    margin: 0 10px;
+    color: #fff;
+   
+}
+
+
+.sign-up p:hover{
+    margin: 0 10px;
+    color: #fff;
+   
+   
+}  
+
+.loginsignup{
+    font-weight: 800;
+}
+
+.loginsignup:hover{
+    
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .Login-bg{
+        height: 30vh;
+        background-image: url('../IMAGE/LOGIN-TOP.png');
+        background-size: cover;
+        background-position: center;
+        margin-top: 10px;
+       
+
+    }
+    .Login_Container{
+        width: 90%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 18vh 0 0 0;
+        
+    }
+    .login-form{
+        
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    .profile-login{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    .form-group{
+        width: 100%;
+        margin-bottom: 10px;
+        
+    }
+    .form-group input{
+        width: 100%;
+        height: 35px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.897);
+    }
+    .For-pass{
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: right;
+    }
+    .For-pass p{
+        color: rgb(255, 255, 255);
+        font-family: Vast Shadow;
+        font-size: small;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+    button{
+        width: 50%;
+        aspect-ratio: 12/3;
+        margin: 5px 0;
+    }
+
+    .connect-with{
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+    }
+    .connect-with img{
+        margin: 0 10px;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+    }
+    .sign-up{
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .sign-up p{
+        margin: 0 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+}
+
+

@@ -1,0 +1,142 @@
+@font-face {
+    font-family: VastShadow-regular;
+    src: url(../font/VastShadow-Regular.ttf);
+}
+@font-face {
+    font-family: inter-regular;
+    src: url(../font/Inter_18pt-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F2F2;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #2A2A2A;
+}  
+nav img{
+    width: 120px;
+    height: 40px;
+}
+nav span{
+    color: #fff;
+    margin-left: 10px;
+    font-family: VastShadow-regular;
+    font-size: 20px;    
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    margin: 20px;
+}
+.Container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    margin-top: 60px;
+
+}
+.Container form h1{
+    font-family: VastShadow-regular;
+    font-size: 20px;
+    margin: 10px;
+}
+.Container form h3{
+    font-family: VastShadow-regular;
+    font-size: 15px;
+    margin: 10px;
+    color: rgba(35, 35, 33, .8);
+}
+.Container form .GOOGLE{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(35, 35, 33, .2);
+}
+.Container form .GOOGLE img{
+    width: 20px;
+    height: 20px;
+    margin: 5px 15px;
+}
+.Container form span{
+    font-family: VastShadow-regular;
+    font-size: 15px;
+    color: #000000;
+    margin: 10px;
+}
+.Container form input{
+    width: 80%;
+    margin: 10px 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    border: #000000 solid 1px;
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #000000;
+}
+.Container form button{
+    width: 80%;
+    margin: 10px 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: inter-regular;
+    font-size: 15px;
+    cursor: pointer;
+}
+.Container form a{
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #000000;
+    margin: 10px;
+    text-decoration: none;
+    
+}
+.Container form .create-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.Container form .create-one p{
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #000000;
+    margin: 10px;
+}
+.Container form .create-one a{
+    font-family: inter-regular;
+    font-size: 15px;
+    color: #000000;
+    margin: 10px;
+    text-decoration: none;
+}
+

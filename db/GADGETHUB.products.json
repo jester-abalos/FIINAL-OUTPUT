@@ -1,0 +1,63 @@
+[{
+  "_id": {
+    "$oid": "674dfbd0fbef053e7a8c3feb"
+  },
+  "name": "poco x6 ",
+  "price": 59000,
+  "image": "../img/items/poco x6 (2).jpg",
+  "isBestseller": true
+},
+{
+  "_id": {
+    "$oid": "674dfc8ffbef053e7a8c3fed"
+  },
+  "name": "Asus 17.3 Laptop ROG Strix G17 Laptop AMD Ryzen 9-7845HX",
+  "price": 59000,
+  "image": "../img/items/Asus 17.3 Laptop ROG Strix G17 Laptop AMD Ryzen 9-7845HX NVIDIA GeForce RTX 4060 16gb1TB Win11 (1).jpg",
+  "isBestseller": true
+},
+{
+  "_id": {
+    "$oid": "674dfc94fbef053e7a8c3fef"
+  },
+  "name": "huawei nova 12i",
+  "price": 59000,
+  "image": "../img/items/huawei nova 12i (1).jpg",
+  "isBestseller": true
+},
+{
+  "_id": {
+    "$oid": "674dfcadfbef053e7a8c3ff0"
+  },
+  "name": "iphone 12 promax",
+  "price": 59000,
+  "image": "../img/items/iphone 12 promax (1).jpg",
+  "isBestseller": true
+},
+{
+  "_id": {
+    "$oid": "674dfcb0fbef053e7a8c3ff1"
+  },
+  "name": "iphone 11 promax",
+  "price": 59000,
+  "image": "../img/items/iphone 11 promax (1).jpg",
+  "isBestseller": true
+},
+{
+  "_id": {
+    "$oid": "674dfd04fbef053e7a8c3ff2"
+  },
+  "name": "oppo a78",
+  "price": 59000,
+  "image": "../img/items/oppo a78 (1).jpg",
+  "isBestseller": true
+},
+{
+  "_id": {
+    "$oid": "674dfd0efbef053e7a8c3ff3"
+  },
+  "name": "oppo reno 11",
+  "price": 59000,
+  "image": "../img/items/oppo reno 11 (1).jpg",
+  "isBestseller": true
+}]

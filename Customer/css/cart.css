@@ -1,0 +1,133 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cart-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus state */
+#quantity:focus {
+    outline: none;
+    border-color: #1976d2; /* Blue focus border */
+}
+
+/* Hover state */
+#quantity:hover {
+    border-color: #888; /* Darker border on hover */
+}
+
+/* Button styling for quantity (increment/decrement) */
+#quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Up and Down buttons for quantity input */
+#quantity-button-up, #quantity-button-down {
+    background-color: #54585c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 40px;
+    height: 40px;
+}
+
+#quantity-button-up:hover, #quantity-button-down:hover {
+    background-color: #54585c;
+    transform: translateY(-2px);
+}
+
+#quantity-button-up:disabled, #quantity-button-down:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+/* Table styles */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.cart-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.cart-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .cart-container {
+        width: 95%;
+    }
+
+    .cart-table th, .cart-table td {
+        padding: 10px;
+    }
+
+    .cart-item-image {
+        width: 40px;
+        height: 40px;
+    }
+}

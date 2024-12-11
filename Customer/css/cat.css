@@ -1,0 +1,87 @@
+/* Categories Section */
+.Category {
+    background-color: #fff;
+    padding: 20px;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Category Title */
+.categoryTitle {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Category Grid */
+.categorygrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 170px;
+    justify-items: center;
+    
+}
+
+/* Category Item */
+.catitem {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    max-width: 200px; /* Limit the maximum width of each item */
+    width: 100%; /* Allow items to adjust to the container */
+    
+}
+
+.catitem:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Image */
+.catitem img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Category Text */
+.catitem p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .categorygrid {
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row for medium screens */
+    }
+    .catitem {
+        max-width: 150px; /* Limit item size on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .categorygrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row for smaller tablets */
+    }
+    .catitem {
+        max-width: 130px; /* Further limit item size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .categorygrid {
+        grid-template-columns: 1fr; /* 1 item per row for small screens */
+    }
+    .catitem {
+        max-width: 100%; /* Items take up full width on small screens */
+    }
+}
